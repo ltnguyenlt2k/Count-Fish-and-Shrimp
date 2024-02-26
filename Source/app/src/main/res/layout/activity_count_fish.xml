@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".CountFishActivity">
+
+    <Button
+        android:id="@+id/back_home_fish"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:gravity="center_vertical"
+        android:text="  Back Home"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:background="#6200EE"/>
+
+    <TextView
+        android:text="Count Fish"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:textAlignment="center"
+        android:textSize="20sp" />
+<FrameLayout
+    android:layout_width="350dp"
+    android:layout_height="467dp"
+    android:layout_marginTop="8dp"
+    android:layout_gravity="center">
+
+    <org.opencv.android.JavaCameraView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/opencv_surface_view"
+        app:show_fps="true"
+        app:camera_id="any"/>
+
+</FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginTop="8dp">
+        <TextView
+            android:id="@+id/ketqua_fish"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:text="Amount:"/>
+
+        <Button
+            android:id="@+id/btn_ket_qua_fish"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="btn"
+            android:layout_marginTop="8dp"/>
+    </LinearLayout>
+
+
+</LinearLayout>
